@@ -1,9 +1,4 @@
-function reverseString(str) {
-    if(!str) {
-        return '';
-    }
-    return str.split("").reverse().join("");
-}
+import { reverseString } from './utils/stringReverse';
 
 process.stdin.on("data", buffer => {
     let convertedToStringBufferData = '';

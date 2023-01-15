@@ -1,11 +1,5 @@
-const readline = require("readline")
-
-function reverseString(str) {
-    if(!str) {
-        return '';
-    }
-    return str.split("").reverse().join("");
-}
+import readline from 'readline';
+import { reverseString } from './utils/stringReverse';
 
 const rl = readline.createInterface({
     input: process.stdin, 

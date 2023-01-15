@@ -4,8 +4,9 @@
   "description": "Learning node js",
   "main": "index.js",
   "scripts": {
-    "task1": "nodemon ./module1/task1-1.js",
-    "task1-modified": "nodemon ./module1/task1-1-modified.js",
+    "task1": "nodemon --exec node_modules/.bin/babel-node ./module1/task1-1.js",
+    "task1-modified": "nodemon --exec node_modules/.bin/babel-node ./module1/task1-1-modified.js",
+    "task2": "nodemon --exec node_modules/.bin/babel-node ./module1/task1-2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/danilovIgor773/nodejs_gmp_hws/issues"
   },
-  "homepage": "https://github.com/danilovIgor773/nodejs_gmp_hws#readme"
+  "homepage": "https://github.com/danilovIgor773/nodejs_gmp_hws#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
 }
