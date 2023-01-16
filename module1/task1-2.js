@@ -1,7 +1,5 @@
 import fs from 'fs';
 import csv from 'csvtojson';
-//const fs = require('fs');
-//const csv = require('csvtojson');
 
 const handleError = (error) => {
     console.error('[CATCHED ERROR]', error);
